@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" fir="ltr">
+		<head>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="https://unpkg.com/lightweight-charts@2.0.0/dist/lightweight-charts.standalone.production.js"></script>
+			<meta charset="utf-8">
+			<title>F/O Stock Data</title>
+		</head>
+		<body>
+			<h1 id="title">FnO-COI/PCR Data</h1>
+			<h2 id="subtitle">@ArD Inc.</h2>
+			<style type="text/css">
+				#title{
+					text-align: center
+				}
+				#subtitle{
+					text-align: center
+				}
+			</style>
+			<div id="tvchart"></div>
+			<input type="text" id="symbolInput" name="symb" onchange="getSymbol(document.getElementById('symbolInput').value)" >
+			<input type="file" id="csvFileInput" onchange="handleFiles(this.files)" accept=".csv">
+		</body>
+		<script type="text/javascript" src="index.js"></script>
+</html>
+
